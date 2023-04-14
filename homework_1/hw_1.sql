@@ -11,7 +11,7 @@ WHERE ProductCount > 2;
 
 -- 3. Выведите весь ассортимент товаров марки “Samsung”
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE Manufacturer = "Samsung";
 
@@ -19,36 +19,36 @@ WHERE Manufacturer = "Samsung";
 
 -- 4.1. Товары, в которых есть упоминание "Iphone"
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE ProductName REGEXP "iPhone";
 
 -- или:
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE ProductName LIKE "%iPhone%";
 
 -- 4.2. "Samsung"
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE Manufacturer REGEXP "Samsung";
 
 -- или:
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE Manufacturer LIKE "%Samsung%";
 
 -- 4.3.  Товары, в которых есть ЦИФРА "8"  
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE ProductName REGEXP "8";
 
 -- или:
 
-SELECT ProductName
+SELECT *
 FROM phone
 WHERE ProductName LIKE "%8%";
